@@ -1,0 +1,155 @@
+.background-image{
+position: relative;
+overflow-y:scroll;  
+min-height:150vh;
+
+    }
+
+.background-image_img{
+position: absolute;
+height:100%;
+width:100%;
+
+
+}
+.inter-image_img{
+    z-index: 2;
+   position: absolute;
+   height:100%;
+   width:100%;
+   text-align: center;
+}
+
+/* .inter-image{
+position: absolute;
+height:100vh;
+top:20;
+
+} */
+.inter-image-desktop_img{
+ position: absolute;   
+z-index:2;
+display:none;
+height:100%;
+width:100%;
+
+
+/* width:100%; */
+
+}
+
+.btnup{
+   z-index: 3;
+   position: absolute;  
+ top:37%;
+width:100%;
+box-sizing: border-box;
+
+/* display: flex;
+flex-direction: column;
+justify-content: space-between; */
+}
+.btndown{
+    z-index: 3;
+position: absolute;
+top:50%;
+width:100%;
+text-align: center;
+
+}
+.btn_container-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:40%;
+    margin: auto;
+    
+}
+.btn_container-down{
+    width:40%;
+    margin: auto;
+}
+.btn{
+    border-radius:20px;
+    background: transparent;
+    border:2px solid white;
+    color:white;
+    outline: none;
+    box-shadow: 0;
+    padding:0 15px;
+    width:100px;
+
+}
+.btn_container-up > .btn:nth-child(1){
+   border-color:purple ; 
+   margin: auto;
+   margin-bottom:10px;
+}
+.btn_container-up > .btn:nth-child(2){
+    border-color:red ;
+    margin: auto;
+    
+
+ }
+ .btn_container-down > .btn:nth-child(1){
+    border-color:rgb(36, 219, 36) ; 
+    
+ }
+
+@media screen and (min-width:500px) {
+  
+} 
+@media screen and (min-width:600px) {
+    .background-image{
+        min-height:200vh; 
+            }
+             .btnup  {
+                top:37%;
+            }
+            .btn{
+               font-size:15px;
+                padding:3px 20px;
+                width:120px;
+            
+            }   
+}
+
+@media screen and (min-width:992px) {
+    .background-image{
+        min-height:140vh; 
+            }
+    .inter-image_img{
+      display:none
+    }
+    
+
+    .inter-image-desktop_img{
+        z-index: 2;
+        position: absolute;
+        height:100%;
+        /* object-fit: cover; */
+        width:100%;
+        text-align: center;
+        display:inline
+       }
+       .btnup{
+      top:20%;
+     width:100%;
+     }
+     .btndown{
+     top:43%;
+     width:100%;
+    
+     
+     }
+     .btn_container-up, .btn_container-down{
+        padding-left:16px;
+     }
+     .background-image_img{
+      /* top:-20px; */
+        }
+}
+@media screen and (min-width:1999px) {
+ 
+}
